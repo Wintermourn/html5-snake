@@ -146,8 +146,8 @@ food = {
   
   set: function() {
     food.size = snake.size;
-    food.x = (Math.ceil(Math.random() * 10) * snake.size * 4) - snake.size / 2;
-    food.y = (Math.ceil(Math.random() * 10) * snake.size * 3) - snake.size / 2;
+    food.x = Math.random()*5;
+    food.y = Math.random()*5;
   },
   
   draw: function() {
